@@ -1,0 +1,72 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="568pt" height="404pt" viewBox="0.00 0.00 568.14 404.00">
+<g id="graph0" class="graph" transform="translate(4,400) scale(1)" data-name="">
+<polygon fill="white" stroke="none" points="-4,4 -4,-400 564.14,-400 564.14,4 -4,4" style=""/>
+<!-- [root] data.local_file.abc (expand) -->
+<g id="node1" class="node" pointer-events="visible" data-name="[root] data.local_file.abc (expand)">
+
+<polygon fill="none" stroke="black" points="339.18,-180 220.96,-180 220.96,-144 339.18,-144 339.18,-180" style=""/>
+<text text-anchor="middle" x="280.07" y="-157.8" font-family="Times,serif" font-size="14.00" style="">data.local_file.abc</text>
+</g>
+<!-- [root] local_file.abc (expand) -->
+<g id="node2" class="node" pointer-events="visible" data-name="[root] local_file.abc (expand)">
+
+<polygon fill="none" stroke="black" points="325.86,-108 234.28,-108 234.28,-72 325.86,-72 325.86,-108" style=""/>
+<text text-anchor="middle" x="280.07" y="-85.8" font-family="Times,serif" font-size="14.00" style="">local_file.abc</text>
+</g>
+<!-- [root] data.local_file.abc (expand)&#45;&gt;[root] local_file.abc (expand) -->
+<g id="edge1" class="edge" data-name="[root] data.local_file.abc (expand)-&gt;[root] local_file.abc (expand)">
+
+<path fill="none" stroke="black" d="M280.07,-143.7C280.07,-136.41 280.07,-127.73 280.07,-119.54" style=""/>
+<polygon fill="black" stroke="black" points="283.57,-119.62 280.07,-109.62 276.57,-119.62 283.57,-119.62" style=""/>
+</g>
+<!-- [root] provider[&quot;registry.terraform.io/hashicorp/local&quot;] -->
+<g id="node4" class="node" pointer-events="visible" data-name="[root] provider[&quot;registry.terraform.io/hashicorp/local&quot;]">
+
+<polygon fill="none" stroke="black" points="280.07,-36 -0.07,-18 280.07,0 560.22,-18 280.07,-36" style=""/>
+<text text-anchor="middle" x="280.07" y="-13.8" font-family="Times,serif" font-size="14.00" style="">provider["registry.terraform.io/hashicorp/local"]</text>
+</g>
+<!-- [root] local_file.abc (expand)&#45;&gt;[root] provider[&quot;registry.terraform.io/hashicorp/local&quot;] -->
+<g id="edge2" class="edge" data-name="[root] local_file.abc (expand)-&gt;[root] provider[&quot;registry.terraform.io/hashicorp/local&quot;]">
+
+<path fill="none" stroke="black" d="M280.07,-71.7C280.07,-64.41 280.07,-55.73 280.07,-47.54" style=""/>
+<polygon fill="black" stroke="black" points="283.57,-47.62 280.07,-37.62 276.57,-47.62 283.57,-47.62" style=""/>
+</g>
+<!-- [root] local_file.def (expand) -->
+<g id="node3" class="node" pointer-events="visible" data-name="[root] local_file.def (expand)">
+
+<polygon fill="none" stroke="black" points="325.31,-252 234.83,-252 234.83,-216 325.31,-216 325.31,-252" style=""/>
+<text text-anchor="middle" x="280.07" y="-229.8" font-family="Times,serif" font-size="14.00" style="">local_file.def</text>
+</g>
+<!-- [root] local_file.def (expand)&#45;&gt;[root] data.local_file.abc (expand) -->
+<g id="edge3" class="edge" data-name="[root] local_file.def (expand)-&gt;[root] data.local_file.abc (expand)">
+
+<path fill="none" stroke="black" d="M280.07,-215.7C280.07,-208.41 280.07,-199.73 280.07,-191.54" style=""/>
+<polygon fill="black" stroke="black" points="283.57,-191.62 280.07,-181.62 276.57,-191.62 283.57,-191.62" style=""/>
+</g>
+<!-- [root] provider[&quot;registry.terraform.io/hashicorp/local&quot;] (close) -->
+<g id="node5" class="node" pointer-events="visible" data-name="[root] provider[&quot;registry.terraform.io/hashicorp/local&quot;] (close)">
+
+<ellipse fill="none" stroke="black" cx="280.07" cy="-306" rx="251.26" ry="18" style=""/>
+<text text-anchor="middle" x="280.07" y="-301.8" font-family="Times,serif" font-size="14.00" style="">[root] provider["registry.terraform.io/hashicorp/local"] (close)</text>
+</g>
+<!-- [root] provider[&quot;registry.terraform.io/hashicorp/local&quot;] (close)&#45;&gt;[root] local_file.def (expand) -->
+<g id="edge4" class="edge" data-name="[root] provider[&quot;registry.terraform.io/hashicorp/local&quot;] (close)-&gt;[root] local_file.def (expand)">
+
+<path fill="none" stroke="black" d="M280.07,-287.7C280.07,-280.41 280.07,-271.73 280.07,-263.54" style=""/>
+<polygon fill="black" stroke="black" points="283.57,-263.62 280.07,-253.62 276.57,-263.62 283.57,-263.62" style=""/>
+</g>
+<!-- [root] root -->
+<g id="node6" class="node" pointer-events="visible" data-name="[root] root">
+
+<ellipse fill="none" stroke="black" cx="280.07" cy="-378" rx="50.99" ry="18" style=""/>
+<text text-anchor="middle" x="280.07" y="-373.8" font-family="Times,serif" font-size="14.00" style="">[root] root</text>
+</g>
+<!-- [root] root&#45;&gt;[root] provider[&quot;registry.terraform.io/hashicorp/local&quot;] (close) -->
+<g id="edge5" class="edge" data-name="[root] root-&gt;[root] provider[&quot;registry.terraform.io/hashicorp/local&quot;] (close)">
+
+<path fill="none" stroke="black" d="M280.07,-359.7C280.07,-352.41 280.07,-343.73 280.07,-335.54" style=""/>
+<polygon fill="black" stroke="black" points="283.57,-335.62 280.07,-325.62 276.57,-335.62 283.57,-335.62" style=""/>
+</g>
+</g>
+</svg>
