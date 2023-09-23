@@ -1,0 +1,48 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="558pt" height="260pt" viewBox="0.00 0.00 557.54 260.00">
+<g id="graph0" class="graph" transform="translate(4,256) scale(1)" data-name="">
+<polygon fill="white" stroke="none" points="-4,4 -4,-256 553.54,-256 553.54,4 -4,4" style=""/>
+<!-- [root] aws_instance.mysrv1 (expand) -->
+<g id="node1" class="node" pointer-events="visible" data-name="[root] aws_instance.mysrv1 (expand)">
+
+<polygon fill="none" stroke="black" points="342.91,-108 206.63,-108 206.63,-72 342.91,-72 342.91,-108" style=""/>
+<text text-anchor="middle" x="274.77" y="-85.8" font-family="Times,serif" font-size="14.00" style="">aws_instance.mysrv1</text>
+</g>
+<!-- [root] provider[&quot;registry.terraform.io/hashicorp/aws&quot;] -->
+<g id="node2" class="node" pointer-events="visible" data-name="[root] provider[&quot;registry.terraform.io/hashicorp/aws&quot;]">
+
+<polygon fill="none" stroke="black" points="274.77,-36 0.23,-18 274.77,0 549.31,-18 274.77,-36" style=""/>
+<text text-anchor="middle" x="274.77" y="-13.8" font-family="Times,serif" font-size="14.00" style="">provider["registry.terraform.io/hashicorp/aws"]</text>
+</g>
+<!-- [root] aws_instance.mysrv1 (expand)&#45;&gt;[root] provider[&quot;registry.terraform.io/hashicorp/aws&quot;] -->
+<g id="edge1" class="edge" data-name="[root] aws_instance.mysrv1 (expand)-&gt;[root] provider[&quot;registry.terraform.io/hashicorp/aws&quot;]">
+
+<path fill="none" stroke="black" d="M274.77,-71.7C274.77,-64.41 274.77,-55.73 274.77,-47.54" style=""/>
+<polygon fill="black" stroke="black" points="278.27,-47.62 274.77,-37.62 271.27,-47.62 278.27,-47.62" style=""/>
+</g>
+<!-- [root] provider[&quot;registry.terraform.io/hashicorp/aws&quot;] (close) -->
+<g id="node3" class="node" pointer-events="visible" data-name="[root] provider[&quot;registry.terraform.io/hashicorp/aws&quot;] (close)">
+
+<ellipse fill="none" stroke="black" cx="274.77" cy="-162" rx="247.26" ry="18" style=""/>
+<text text-anchor="middle" x="274.77" y="-157.8" font-family="Times,serif" font-size="14.00" style="">[root] provider["registry.terraform.io/hashicorp/aws"] (close)</text>
+</g>
+<!-- [root] provider[&quot;registry.terraform.io/hashicorp/aws&quot;] (close)&#45;&gt;[root] aws_instance.mysrv1 (expand) -->
+<g id="edge2" class="edge" data-name="[root] provider[&quot;registry.terraform.io/hashicorp/aws&quot;] (close)-&gt;[root] aws_instance.mysrv1 (expand)">
+
+<path fill="none" stroke="black" d="M274.77,-143.7C274.77,-136.41 274.77,-127.73 274.77,-119.54" style=""/>
+<polygon fill="black" stroke="black" points="278.27,-119.62 274.77,-109.62 271.27,-119.62 278.27,-119.62" style=""/>
+</g>
+<!-- [root] root -->
+<g id="node4" class="node" pointer-events="visible" data-name="[root] root">
+
+<ellipse fill="none" stroke="black" cx="274.77" cy="-234" rx="50.99" ry="18" style=""/>
+<text text-anchor="middle" x="274.77" y="-229.8" font-family="Times,serif" font-size="14.00" style="">[root] root</text>
+</g>
+<!-- [root] root&#45;&gt;[root] provider[&quot;registry.terraform.io/hashicorp/aws&quot;] (close) -->
+<g id="edge3" class="edge" data-name="[root] root-&gt;[root] provider[&quot;registry.terraform.io/hashicorp/aws&quot;] (close)">
+
+<path fill="none" stroke="black" d="M274.77,-215.7C274.77,-208.41 274.77,-199.73 274.77,-191.54" style=""/>
+<polygon fill="black" stroke="black" points="278.27,-191.62 274.77,-181.62 271.27,-191.62 278.27,-191.62" style=""/>
+</g>
+</g>
+</svg>

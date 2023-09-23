@@ -1,0 +1,49 @@
+digraph {
+	compound = "true"
+	newrank = "true"
+	subgraph "root" {
+		"[root] module.ec2_seoul.aws_default_vpc.default (expand)" [label = "module.ec2_seoul.aws_default_vpc.default", shape = "box"]
+		"[root] module.ec2_seoul.aws_instance.default (expand)" [label = "module.ec2_seoul.aws_instance.default", shape = "box"]
+		"[root] module.ec2_seoul.data.aws_ami.default (expand)" [label = "module.ec2_seoul.data.aws_ami.default", shape = "box"]
+		"[root] module.ec2_singapore.aws_default_vpc.default (expand)" [label = "module.ec2_singapore.aws_default_vpc.default", shape = "box"]
+		"[root] module.ec2_singapore.aws_instance.default (expand)" [label = "module.ec2_singapore.aws_instance.default", shape = "box"]
+		"[root] module.ec2_singapore.data.aws_ami.default (expand)" [label = "module.ec2_singapore.data.aws_ami.default", shape = "box"]
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"]" [label = "provider[\"registry.terraform.io/hashicorp/aws\"]", shape = "diamond"]
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"].seoul" [label = "provider[\"registry.terraform.io/hashicorp/aws\"].seoul", shape = "diamond"]
+		"[root] module.ec2_seoul (close)" -> "[root] module.ec2_seoul.output.private_ip (expand)"
+		"[root] module.ec2_seoul.aws_default_vpc.default (expand)" -> "[root] module.ec2_seoul (expand)"
+		"[root] module.ec2_seoul.aws_default_vpc.default (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"].seoul"
+		"[root] module.ec2_seoul.aws_instance.default (expand)" -> "[root] module.ec2_seoul.aws_default_vpc.default (expand)"
+		"[root] module.ec2_seoul.aws_instance.default (expand)" -> "[root] module.ec2_seoul.data.aws_ami.default (expand)"
+		"[root] module.ec2_seoul.aws_instance.default (expand)" -> "[root] module.ec2_seoul.var.instance_name (expand)"
+		"[root] module.ec2_seoul.aws_instance.default (expand)" -> "[root] module.ec2_seoul.var.instance_type (expand)"
+		"[root] module.ec2_seoul.data.aws_ami.default (expand)" -> "[root] module.ec2_seoul (expand)"
+		"[root] module.ec2_seoul.data.aws_ami.default (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"].seoul"
+		"[root] module.ec2_seoul.output.private_ip (expand)" -> "[root] module.ec2_seoul.aws_instance.default (expand)"
+		"[root] module.ec2_seoul.var.instance_name (expand)" -> "[root] module.ec2_seoul (expand)"
+		"[root] module.ec2_seoul.var.instance_type (expand)" -> "[root] module.ec2_seoul (expand)"
+		"[root] module.ec2_singapore (close)" -> "[root] module.ec2_singapore.output.private_ip (expand)"
+		"[root] module.ec2_singapore.aws_default_vpc.default (expand)" -> "[root] module.ec2_singapore (expand)"
+		"[root] module.ec2_singapore.aws_default_vpc.default (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] module.ec2_singapore.aws_instance.default (expand)" -> "[root] module.ec2_singapore.aws_default_vpc.default (expand)"
+		"[root] module.ec2_singapore.aws_instance.default (expand)" -> "[root] module.ec2_singapore.data.aws_ami.default (expand)"
+		"[root] module.ec2_singapore.aws_instance.default (expand)" -> "[root] module.ec2_singapore.var.instance_name (expand)"
+		"[root] module.ec2_singapore.aws_instance.default (expand)" -> "[root] module.ec2_singapore.var.instance_type (expand)"
+		"[root] module.ec2_singapore.data.aws_ami.default (expand)" -> "[root] module.ec2_singapore (expand)"
+		"[root] module.ec2_singapore.data.aws_ami.default (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] module.ec2_singapore.output.private_ip (expand)" -> "[root] module.ec2_singapore.aws_instance.default (expand)"
+		"[root] module.ec2_singapore.var.instance_name (expand)" -> "[root] module.ec2_singapore (expand)"
+		"[root] module.ec2_singapore.var.instance_type (expand)" -> "[root] module.ec2_singapore (expand)"
+		"[root] output.module_output_seoul (expand)" -> "[root] module.ec2_seoul.output.private_ip (expand)"
+		"[root] output.module_output_singapore (expand)" -> "[root] module.ec2_singapore.output.private_ip (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] module.ec2_singapore.aws_instance.default (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"].seoul (close)" -> "[root] module.ec2_seoul.aws_instance.default (expand)"
+		"[root] root" -> "[root] module.ec2_seoul (close)"
+		"[root] root" -> "[root] module.ec2_singapore (close)"
+		"[root] root" -> "[root] output.module_output_seoul (expand)"
+		"[root] root" -> "[root] output.module_output_singapore (expand)"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"].seoul (close)"
+	}
+}
+
